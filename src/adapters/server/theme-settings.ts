@@ -6,5 +6,12 @@ import { initPrezlyClient } from './prezly';
 
 export const { useThemeSettings: themeSettings } = ThemeSettingsAdapter.connect<ThemeSettings>({
     defaults: DEFAULT_THEME_SETTINGS,
-    settings: () => initPrezlyClient().contentDelivery.themeSettings(),
+    settings: async () => {
+        const settings = await initPrezlyClient().contentDelivery.themeSettings();
+        // Force grid layout instead of masonry
+        return {
+            ...settings,
+            layout: 'grid',
+        };
+    },
 });
