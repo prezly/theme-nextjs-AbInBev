@@ -17,6 +17,11 @@
 
     margin: $spacing-3 0;
     color: var(--prezly-footer-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--prezly-footer-text-color);
+    }
 }
 
 .aboutUs {
@@ -57,12 +62,24 @@
     align-items: flex-start;
     white-space: pre;
 
+    &:hover,
+    &:focus {
+        color: #64dcce;
+    }
+
     .icon {
         margin-right: $spacing-1;
 
         // arbitrary value to align icon to text
         margin-top: 0.1875rem;
         flex-shrink: 0;
+    }
+
+    a {
+        &:hover,
+        &:focus {
+            color: #64dcce;
+        }
     }
 }
 
@@ -74,4 +91,9 @@
 .about a {
     color: var(--prezly-footer-text-color);
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        color: #64dcce;
+    }
 }

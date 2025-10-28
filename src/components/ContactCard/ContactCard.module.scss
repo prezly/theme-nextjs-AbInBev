@@ -48,13 +48,20 @@
 
 .link {
     @include text-small;
-    @include link-primary;
 
     display: flex;
     align-items: center;
     margin-right: $spacing-4;
     margin-bottom: $spacing-2;
     overflow: hidden;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: #64dcce;
+        text-decoration: none;
+    }
 }
 
 .linkText {
@@ -62,6 +69,11 @@
     overflow-wrap: break-word;
     font-weight: $font-weight-semi-bold;
     font-size: $font-size-labels;
+
+    .link:hover &,
+    .link:focus & {
+        color: #64dcce;
+    }
 }
 
 .socials {
@@ -79,6 +91,11 @@
     height: $size;
     flex-shrink: 0;
     margin-right: $spacing-1;
+
+    .link:hover &,
+    .link:focus & {
+        color: #64dcce;
+    }
 }
 
 .container {

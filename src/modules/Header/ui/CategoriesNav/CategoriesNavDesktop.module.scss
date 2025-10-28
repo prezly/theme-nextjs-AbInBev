@@ -109,14 +109,15 @@
     @include text-label;
 
     padding: $spacing-1 $spacing-2;
-    color: var(--prezly-text-color);
-    font-weight: $font-weight-medium;
+    font-size: 15px;
+    font-weight: 700;
+    color: #64dcce;
     text-decoration: none;
     border-radius: $border-radius-m;
 
     &:hover,
     &:focus {
-        background: var(--prezly-background-color-tertiary);
+        background: #a3a0a1;
     }
 }
 
