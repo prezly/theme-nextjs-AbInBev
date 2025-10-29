@@ -1,8 +1,8 @@
 .container {
     @include container;
 
-    padding-top: $spacing-8;
-    padding-bottom: $spacing-8;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--prezly-background-color-secondary);
     text-align: center;
 
