@@ -4,11 +4,18 @@
     display: block;
     padding: $spacing-2;
     text-decoration: none;
-    color: var(--prezly-text-color);
+    color: #3315bd;
     font-weight: $font-weight-medium;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: #efe000;
+    }
 
     &.active {
         background: var(--prezly-background-color-tertiary);
+        color: #efe000;
     }
 
     .withMobileDisplay & {

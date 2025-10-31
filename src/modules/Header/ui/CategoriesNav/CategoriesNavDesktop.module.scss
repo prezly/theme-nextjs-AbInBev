@@ -111,13 +111,14 @@
     padding: $spacing-1 $spacing-2;
     font-size: 15px;
     font-weight: 700;
-    color: #64dcce;
+    color: #3315bd;
     text-decoration: none;
     border-radius: $border-radius-m;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &:hover,
     &:focus {
-        background: #a3a0a1;
+        background: #e9e9e9;
     }
 }
 
