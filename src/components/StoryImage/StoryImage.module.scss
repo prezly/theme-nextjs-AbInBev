@@ -9,12 +9,14 @@
 .imageContainer,
 .image {
     height: 100%;
+    width: 100%;
 }
 
 .image {
     @include branding;
 
     object-fit: cover;
+    object-position: center;
 
     &.static {
         position: static !important;
