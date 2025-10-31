@@ -46,11 +46,13 @@
 .secondary {
     border-color: var(--prezly-border-color);
     color: var(--prezly-text-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
     &:not(:disabled) {
         &:hover,
         &:focus {
             background-color: var(--prezly-background-color-secondary);
+            color: #efe000;
         }
 
         &:active {

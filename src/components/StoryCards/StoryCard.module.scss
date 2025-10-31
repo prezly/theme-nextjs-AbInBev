@@ -7,6 +7,11 @@
         }
 
     }
+
+    &:hover .titleLink,
+    &:focus-within .titleLink {
+        color: #efe000;
+    }
 }
 
 .horizontal {
@@ -78,6 +83,12 @@
 .titleLink {
     text-decoration: none;
     color: var(--prezly-text-color);
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: #efe000;
+    }
 }
 
 .subtitle {

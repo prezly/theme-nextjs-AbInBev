@@ -69,10 +69,11 @@
     overflow-wrap: break-word;
     font-weight: $font-weight-semi-bold;
     font-size: $font-size-labels;
+    transition: color 0.2s ease-in-out;
 
     .link:hover &,
     .link:focus & {
-        color: #64dcce;
+        color: #efe000;
     }
 }
 
@@ -91,10 +92,11 @@
     height: $size;
     flex-shrink: 0;
     margin-right: $spacing-1;
+    transition: color 0.2s ease-in-out;
 
     .link:hover &,
     .link:focus & {
-        color: #64dcce;
+        color: #efe000;
     }
 }
 

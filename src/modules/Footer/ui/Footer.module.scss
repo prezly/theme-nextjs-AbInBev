@@ -36,10 +36,11 @@
     cursor: pointer;
     color: var(--prezly-footer-text-color);
     text-decoration: underline;
+    transition: color 0.2s ease-in-out;
 
     &:hover,
     &:focus {
-        color: #64dcce;
+        color: #efe000;
     }
 
     & + & {
