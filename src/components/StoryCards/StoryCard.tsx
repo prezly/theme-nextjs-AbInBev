@@ -74,7 +74,7 @@ export function StoryCard({
                 <StoryImage
                     className={styles.image}
                     fallback={fallback}
-                    forceAspectRatio={forceAspectRatio ? 4 / 3 : undefined}
+                    forceAspectRatio={forceAspectRatio ? 16 / 9 : undefined}
                     isStatic={withStaticImage}
                     placeholder={placeholder}
                     placeholderClassName={styles.placeholder}
